@@ -61,6 +61,18 @@ This project demonstrates SQL skills including:
 - `RANK()`
 - `DENSE_RANK()`
 
+
+The project uses a relational schema with three tables:
+
+Users → stores user information  
+Content → stores movies and series metadata  
+Watch_History → stores viewing activity and ratings
+
+Relationships:
+
+Users (1) → (Many) Watch_History  
+Content (1) → (Many) Watch_History
+
 ## How to Run
 
 1. Open MySQL Workbench / DB Browser / compatible SQL environment
@@ -71,6 +83,27 @@ This project demonstrates SQL skills including:
 ## Purpose
 
 This project was built as part of my SQL learning journey to practice real interview-style database questions and strengthen my portfolio for data, analytics, and AI-related roles.
+
+## Key Insights
+
+Using SQL queries on the Netflix-style dataset, several insights were discovered:
+
+• Premium users generate the highest total watch time.
+• Sci-Fi and Action genres appear among the most watched categories.
+• A small group of users contributes a large portion of watch activity.
+• Certain titles consistently receive higher ratings across viewers.
+
+These types of analyses demonstrate how SQL can be used to extract meaningful insights from relational databases.
+
+## Example Analysis Questions
+
+This project answers real analytics questions such as:
+
+• What are the most watched titles?
+• Which users spend the most time watching content?
+• Which genre has the highest engagement?
+• What content receives the highest ratings?
+• Which users watch more content than average?
 
 ## Author
 
